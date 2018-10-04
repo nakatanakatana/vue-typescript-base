@@ -7,25 +7,25 @@
 </template>
 
 <script lang="ts">
-  import Vue from 'vue'
-  import Component from 'vue-class-component'
+  import Vue from 'vue';
+  import Component from 'vue-class-component';
 
-  import * as counter from '../store/counter'
+  import * as counter from '../store/counter';
 
   @Component({
     name: 'count-button-component',
   })
   export default class CountButtonComponent extends Vue {
     incr () {
-      return counter.increment(this.$store)
+      return counter.increment(this.$store);
     }
 
     decr () {
-      return counter.decrement(this.$store)
+      return counter.decrement(this.$store);
     }
 
     reset () {
-      return counter.reset(this.$store)
+      return counter.reset(this.$store);
     }
   }
 </script>

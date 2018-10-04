@@ -2,6 +2,7 @@
   "extends": "tslint-config-standard",
   "rules": {
     "trailing-comma": true,
+    "semicolon": true,
     "object-curly-spacing": ["never"],
     "no-unused-variable": false,
     "ter-indent": false

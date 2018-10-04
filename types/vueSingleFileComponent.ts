@@ -1,19 +1,19 @@
 declare module '*.vue' {
-  import Vue from 'vue'
-  import {Store} from 'vuex'
+  import Vue from 'vue';
+  import {Store} from 'vuex';
 
   module 'vue/types/options' {
     interface ComponentOptions<V extends Vue> {
-      store?: Store<any>
+      store?: Store<any>;
     }
   }
 
   module 'vue/types/vue' {
     interface Vue {
-      $store: Store<any>
+      $store: Store<any>;
     }
   }
 
-  const component: typeof Vue
-  export default component
+  const component: typeof Vue;
+  export default component;
 }

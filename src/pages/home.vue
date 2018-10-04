@@ -7,13 +7,13 @@
 </template>
 
 <script lang="ts">
-  import Vue from 'vue'
-  import Component from 'vue-class-component'
+  import Vue from 'vue';
+  import Component from 'vue-class-component';
 
-  import * as counter from '../store/counter'
+  import * as counter from '../store/counter';
 
-  import CountViewComponent from '../components/countView.vue'
-  import CountButtonComponent from '../components/countButton.vue'
+  import CountViewComponent from '../components/countView.vue';
+  import CountButtonComponent from '../components/countButton.vue';
 
   @Component({
     name: 'home-component',
@@ -23,10 +23,10 @@
     }
   })
   export default class HomeComponent extends Vue {
-    value: string = 'homeComponent'
+    value: string = 'homeComponent';
 
     get getCount (): number {
-      return counter.getCount(this.$store)
+      return counter.getCount(this.$store);
     }
   }
 </script>

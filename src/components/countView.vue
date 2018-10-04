@@ -7,8 +7,8 @@
 </template>
 
 <script lang="ts">
-  import Vue from 'vue'
-  import Component from 'vue-class-component'
+  import Vue from 'vue';
+  import Component from 'vue-class-component';
 
   @Component({
     name: 'count-vue-component',
@@ -17,7 +17,7 @@
     }
   })
   export default class CountViewComponent extends Vue {
-    count!: number
+    count!: number;
 
     countViewClass () {
       return {
@@ -25,7 +25,7 @@
         'blue': this.count < 0,
         'white': this.count >= 0 && this.count < 10,
         'red': this.count >= 10,
-      }
+      };
     }
   }
 </script>

@@ -1,5 +1,5 @@
-import {CounterState} from './store/counterState'
+import {CounterState} from './store/counterState';
 
 export interface State {
-  counter: CounterState
+  counter: CounterState;
 }
