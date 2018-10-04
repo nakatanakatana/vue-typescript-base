@@ -13,6 +13,10 @@ module.exports = (baseConfig, env, config) => {
       }
     },
     {
+      test: /\.css$/,
+      use: ['style-loader', 'css-loader']
+    },
+    {
       test: /\.(png|jpg|gif)$/,
       loader: 'file-loader',
       options: {
