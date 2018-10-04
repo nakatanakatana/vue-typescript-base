@@ -16,7 +16,7 @@
   import CountButtonComponent from '../components/countButton.vue'
 
   @Component({
-    name: 'home-page',
+    name: 'home-component',
     components: {
       'count-view': CountViewComponent,
       'count-button': CountButtonComponent,

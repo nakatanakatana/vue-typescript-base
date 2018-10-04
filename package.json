@@ -3,13 +3,27 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
+    "build": "webpack --config config/webpack.config.base.js",
+    "build:storybook": "vue-cli-service build:storybook -c config/storybook",
     "clean": "rimraf dist",
     "clean:all": "npm run clean && rimraf node_modules",
     "dev": "webpack-serve --config config/webpack.config.base.js --open",
-    "build": "webpack --config config/webpack.config.base.js"
+    "serve:storybook": "vue-cli-service serve:storybook -p 6006 -c config/storybook"
   },
-  "license": "MIT",
+  "dependencies": {
+    "vue": "^2.5.17",
+    "vue-class-component": "^6.2.0",
+    "vue-router": "^3.0.1",
+    "vuex": "^3.0.1",
+    "vuex-typescript": "^3.0.2"
+  },
   "devDependencies": {
+    "@babel/core": "^7.1.2",
+    "@storybook/addon-actions": "4.0.0-alpha.20",
+    "@storybook/addon-links": "4.0.0-alpha.20",
+    "@storybook/vue": "^4.0.0-alpha.24",
+    "@vue/cli-service": "^3.0.4",
+    "babel-loader": "^8.0.4",
     "copy-webpack-plugin": "^4.5.2",
     "css-loader": "^1.0.0",
     "fork-ts-checker-webpack-plugin": "^0.4.9",
@@ -21,17 +35,12 @@
     "tslint-config-standard": "^8.0.1",
     "tslint-loader": "^3.6.0",
     "typescript": "^3.1.1",
+    "vue-cli-plugin-storybook": "^0.4.8",
     "vue-loader": "^15.4.2",
     "vue-template-compiler": "^2.5.17",
     "webpack": "^4.20.2",
     "webpack-cli": "^3.1.2",
     "webpack-serve": "^2.0.2"
   },
-  "dependencies": {
-    "vue": "^2.5.17",
-    "vue-class-component": "^6.2.0",
-    "vue-router": "^3.0.1",
-    "vuex": "^3.0.1",
-    "vuex-typescript": "^3.0.2"
-  }
+  "license": "MIT"
 }
