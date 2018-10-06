@@ -1,8 +1,8 @@
 <template>
   <div>
-    <button @click="incr">+</button>
-    <button @click="decr">-</button>
-    <button @click="reset">0</button>
+    <button class="button is-primary" @click="incr">+</button>
+    <button class="button is-primary" @click="decr">-</button>
+    <button class='button is-danger' @click="reset">0</button>
   </div>
 </template>
 
