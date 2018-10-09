@@ -1,8 +1,8 @@
 <template>
   <div>
-    <button @click="incr">+</button>
-    <button @click="decr">-</button>
-    <button @click="reset">0</button>
+    <button @click="incr" id="count-button-incr">+</button>
+    <button @click="decr" id="count-button-decr">-</button>
+    <button @click="reset" id="count-button-reset">0</button>
   </div>
 </template>
 
