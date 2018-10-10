@@ -21,7 +21,7 @@
       "vue"
     ],
     "testMatch": [
-      "**/?(*.)+(spec).ts?(x)"
+      "<rootDir>/src/**/?(*.)+(spec).ts?(x)"
     ],
     "modulePaths": [
       "<rootDir>/src",
