@@ -4,7 +4,7 @@ describe('open vue-base', () => {
   });
 
   it('open localhost:8081', () => {
-    cy.visit('http://localhost:8080');
+    cy.visit('http://localhost:8081');
     cy.screenshot();
   });
 });

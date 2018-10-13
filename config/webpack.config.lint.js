@@ -17,6 +17,7 @@ let config = {
   },
   plugins: [
     new ForkTsChecker({
+      tsconfig: "tsconfig.app.json",
       tslint: true,
       vue: true,
     }),

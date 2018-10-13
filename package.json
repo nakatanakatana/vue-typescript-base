@@ -7,11 +7,16 @@
     "build:storybook": "vue-cli-service build:storybook -c config/storybook",
     "clean": "rimraf dist",
     "clean:all": "npm run clean && rimraf node_modules",
+    "cypress:open": "cypress open",
+    "cypress:run": "cypress run",
     "dev": "webpack-dev-server --config config/webpack.config.base.js --port 8080 --host 0.0.0.0 --hot",
-    "lint": "webpack --config config/webpack.config.lint.js",
+    "dev:e2e": "webpack-dev-server --config config/webpack.config.base.js --port 8081 --host 0.0.0.0 --hot",
+    "lint:app": "webpack --config config/webpack.config.lint.js",
+    "lint:e2e": "tslint -p tsconfig.e2e.json",
+    "lint": "npm run lint:app && npm run lint:e2e",
     "serve:storybook": "vue-cli-service serve:storybook -p 6006 -c config/storybook",
-    "test:cypress": "start-server-and-test dev http://0.0.0.0:8080 cypress:run",
-    "cypress:run": "cypress run"
+    "test:e2e": "start-server-and-test dev:e2e http://0.0.0.0:8081 cypress:run",
+    "test:e2e:open": "start-server-and-test dev:e2e http://0.0.0.0:8081 cypress:open"
   },
   "jest": {
     "moduleFileExtensions": [

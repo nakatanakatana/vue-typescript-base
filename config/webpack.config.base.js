@@ -28,7 +28,7 @@ let config = {
         loader: 'vue-loader',
         options: {
           loaders: {
-            'ts': 'ts-loader',
+            'ts': 'ts-loader?configFile=tsconfig.app.json',
           }
         }
       },
@@ -39,6 +39,7 @@ let config = {
         options: {
           appendTsSuffixTo: [/\.vue$/],
           transpileOnly: true,
+          configFile: 'tsconfig.app.json',
         }
       },
       {
@@ -77,6 +78,7 @@ let config = {
     ]),
     new VueLoaderPlugin(),
     new ForkTsChecker({
+      tsconfig: 'tsconfig.app.json',
       tslint: true,
       vue: true,
     }),
