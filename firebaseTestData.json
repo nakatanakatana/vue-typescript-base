@@ -1,0 +1,11 @@
+{
+  "testData": {
+    "example": "foo"
+  },
+  "LimitedAccess": {
+    "signIn": {
+      "piyo": "piyo"
+    },
+    "forbidden": "hoge"
+  }
+}
