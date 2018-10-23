@@ -33,7 +33,7 @@
 <style scoped>
   .count-view {
     border: 1px solid ;
-    width: 100px;
+    width: 130px;
   }
   .blue {
     background: blue;
