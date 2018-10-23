@@ -1,9 +1,7 @@
 {
   "core": {
     "workingDir": ".reg",
-    "actualDir": "cypress/screenshots",
-    "threshold": 0,
-    "thresholdRate": 0.05
+    "actualDir": "cypress/screenshots"
   },
   "plugins": {
     "reg-keygen-git-hash-plugin": {},
@@ -12,9 +10,6 @@
     },
     "reg-notify-github-plugin": {
       "clientId": "MzQ1sDQzNzQy1i8rTdUtqSxILU4uyiwo0U1KLE7VNzEwMjE0089LzE4sSYSRAA=="
-    },
-    "reg-notify-slack-plugin": {
-      "webhookUrl": "https://hooks.slack.com/services/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"
     }
   }
 }
