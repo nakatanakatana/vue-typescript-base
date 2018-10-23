@@ -5,3 +5,4 @@ trash/
 cypress.json
 cypress/videos/
 cypress/screenshots/
+.reg
