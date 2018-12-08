@@ -1,0 +1,18 @@
+kind: pipeline
+name: default
+
+steps:
+  - name: npm install
+    image: node:8-slim
+    commands:
+      - npm install
+
+  - name: lint
+    image: node:8-slim
+    commands:
+      - npm run lint
+
+  - name: test
+    image: node:8-slim
+    commands:
+      - npm run test
