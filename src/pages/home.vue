@@ -8,7 +8,7 @@
 
 <script lang="ts">
   import Vue from 'vue';
-  import Component from 'vue-class-component';
+  import {Component} from 'vue-property-decorator';
 
   import * as counter from '../store/counter';
 
@@ -16,7 +16,6 @@
   import CountButtonComponent from '../components/countButton.vue';
 
   @Component({
-    name: 'home-component',
     components: {
       'count-view': CountViewComponent,
       'count-button': CountButtonComponent,

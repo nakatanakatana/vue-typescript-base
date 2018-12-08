@@ -8,13 +8,11 @@
 
 <script lang="ts">
   import Vue from 'vue';
-  import Component from 'vue-class-component';
+  import {Component} from 'vue-property-decorator';
 
   import * as counter from '../store/counter';
 
-  @Component({
-    name: 'count-button-component',
-  })
+  @Component
   export default class CountButtonComponent extends Vue {
     incr () {
       return counter.increment(this.$store);

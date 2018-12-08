@@ -8,16 +8,11 @@
 
 <script lang="ts">
   import Vue from 'vue';
-  import Component from 'vue-class-component';
+  import {Component, Prop} from 'vue-property-decorator';
 
-  @Component({
-    name: 'count-vue-component',
-    props: {
-      count: Number,
-    }
-  })
+  @Component
   export default class CountViewComponent extends Vue {
-    count!: number;
+    @Prop(Number) count!: number;
 
     countViewClass () {
       return {
