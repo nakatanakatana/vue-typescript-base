@@ -2,17 +2,10 @@ kind: pipeline
 name: default
 
 steps:
-  - name: status
+  - name: npm ci
     image: node:8-slim
     commands:
-      - pwd
-      - ps aux
-      - ls -la
-
-  - name: npm install
-    image: node:8-slim
-    commands:
-      - npm install
+      - npm ci
 
   - name: lint
     image: node:8-slim
