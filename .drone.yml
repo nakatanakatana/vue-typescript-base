@@ -2,13 +2,6 @@ kind: pipeline
 name: default
 
 steps:
-  - name: status
-    image: node:8-slim
-    commands:
-      - pwd
-      - ps aux
-      - ls -la
-
   - name: npm install
     image: node:8-slim
     commands:
