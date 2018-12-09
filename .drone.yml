@@ -2,10 +2,10 @@ kind: pipeline
 name: default
 
 steps:
-  - name: npm install
+  - name: npm ci
     image: node:8-slim
     commands:
-      - npm install
+      - npm ci
 
   - name: lint
     image: node:8-slim
